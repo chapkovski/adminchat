@@ -1,0 +1,12 @@
+{% extends "global/Page.html" %}
+{% load otree admin_chat %}
+
+{% block title %}
+    Page title
+{% endblock %}
+
+{% block content %}
+    {% admin_chat %}
+    {% next_button %}
+
+{% endblock %}

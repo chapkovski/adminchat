@@ -1,12 +1,12 @@
 from os import environ
 
 SESSION_CONFIGS = [
-    # dict(
-    #    name='public_goods',
-    #    display_name="Public Goods",
-    #    num_demo_participants=3,
-    #    app_sequence=['public_goods', 'payment_info']
-    # ),
+    dict(
+       name='example',
+       display_name="Example",
+       num_demo_participants=1,
+       app_sequence=['example']
+    ),
 ]
 
 # if you set a property in SESSION_CONFIG_DEFAULTS, it will be inherited by all configs
@@ -37,4 +37,4 @@ DEMO_PAGE_INTRO_HTML = """ """
 SECRET_KEY = '*ofz)gk8bk8&zar!msre@)(ve8s6@_=(sdot%f6gt@l9(y)-d&'
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
-INSTALLED_APPS = ['otree']
+INSTALLED_APPS = ['otree', 'adminchat']
